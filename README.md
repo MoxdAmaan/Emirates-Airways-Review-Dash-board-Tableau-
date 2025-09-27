@@ -71,3 +71,4 @@ This project demonstrates how **data-driven insights** can guide **strategic imp
 - `emirates_reviews_cleaned.csv` → Cleaned dataset ready for analysis  
 - `python_pre-processing.ipynb` → Python notebook with preprocessing  
 - `Tableau Dashboard` → Interactive visualizations
+- `Emirates logo image` → Emirates logo image
