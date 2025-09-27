@@ -50,6 +50,7 @@ The dashboard is interactive and includes:
 - Route-based insights  
 
 🔗 [View Dashboard Online](https://public.tableau.com/app/profile/mohammad.aman3207/viz/EmiratesAirwaysReviewDashboard/Dashboard1)
+📸 **Dash board Image** <img width="1230" height="814" alt="7 Dash board photo" src="https://github.com/user-attachments/assets/95a319ee-60bf-4bde-9778-47d82939f8d2" />
 
 ---
 
