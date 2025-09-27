@@ -3,24 +3,23 @@
 ![Emirates Logo](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Emirates_logo.svg/640px-Emirates_logo.svg.png)
 
 ## Project Overview
-This project analyzes **Emirates Airways customer reviews** from 2016 to 2024. Using Python for **data preprocessing and exploratory data analysis (EDA)**, and Tableau for interactive **dashboard visualization**, the project aims to uncover insights about:
+This project analyzes **Emirates Airways customer reviews** from 2016 to 2024. Using Python for **data preprocessing**, and Tableau for interactive **dashboard visualization**, the project aims to uncover insights about:
 
 - Customer satisfaction trends over time
-- Ratings for different service aspects (staff, food, ground service, WiFi, entertainment)
+- Ratings for different service aspects (Overall Ratings, Value for Money, Services, Comfort, etc...)
 - Travel class-wise satisfaction (Economy, Business, First)
-- Recommendation likelihood
-- Route-specific feedback
+- Aircraft Ratings
+- Route-specific Ratings
 
-The goal is to **help Emirates identify strengths, opportunities, and actionable insights** to enhance customer experience.
+The goal is to **uncover strengths, opportunities, and actionable insights** to enhance customer experience.
 
 ---
 
 ## Dataset
 - **Source:** [Kaggle – Emirates Airline Customer Reviews](https://www.kaggle.com/datasets/kalyani007/emirates-airline-customer-reviews-2016-2024)
-- **Rows:** ~2,000 reviews
-- **Columns:**  
-  - `Overall Rating` (1–10)  
-  - `Staff Service`, `Food Quality`, `Ground Service`, `WiFi`, `Entertainment` (1–5)  
+- **Rows:** ~1,500 reviews
+- **Columns:**    
+  - `Overall Ratings`, `Staff Service`, `Food Quality`, `Ground Service`, `WiFi`, `Entertainment` (1–5)  
   - `Recommended` (Yes/No)  
   - `Travel Class`, `Route`, `Date Flown`, `Date Published`  
   - Other metadata (Aircraft, Status, Title, Review Text)
@@ -28,59 +27,21 @@ The goal is to **help Emirates identify strengths, opportunities, and actionable
 ---
 
 ## Tech Stack
-- **Python** – Pandas, NumPy, Matplotlib, Seaborn for preprocessing & EDA
-- **Tableau** – Interactive dashboard creation
-- **CSV** – Cleaned dataset storage
+- **Python** – For Pre-processing
+- **Tableau** – Interactive dashboard creation through various metrices and filters
+- **CSV** – For storing cleaned dataset
 
 ---
 
 ## Data Preprocessing
-- Converted `Date Flown` and `Date Published` to datetime  
+- Converted `Date Flown` and `Date Published` to datetime format
 - Dropped null values in essential columns (WiFi, Food, Staff, Ground Service, Route, Date Published)  
-- Standardized categorical columns (`Recommended`, `Travel Class`, `Status`)  
-- Encoded binary `Recommended` column (Yes → 1, No → 0)  
-- Verified numeric columns for proper format (ratings from 1–5; Overall Rating from 1–10)
+- Standardized categorical columns (`Recommended`, `Travel Class`, `Status`)   
+- Verified numeric columns for proper format (ratings from 1–5)
 
 **Cleaned dataset size:** ~1,800 rows × 15 columns
 
 ---
-
-## Exploratory Data Analysis (EDA)
-
-### 1. Overall Ratings
-- Average rating: **7.8/10**  
-- Business and First Class: **~9/10**  
-- Economy: **~7/10**
-
-### 2. Recommendation
-- **85% of customers recommend Emirates**  
-- Positive correlation between **high ratings and recommendation**
-
-### 3. Service Ratings
-| Service Aspect | Average Rating (1–5) |
-|----------------|---------------------|
-| Staff Service  | 4.7                 |
-| Food Quality   | 4.2                 |
-| Ground Service | 4.5                 |
-| WiFi           | 3.8                 |
-| Entertainment  | 4.0                 |
-
-- Staff service and ground service are the biggest drivers of customer satisfaction  
-- WiFi and Economy food are areas for improvement
-
-### 4. Time Trends
-- Review volume peaked in 2019 (~350 reviews)  
-- Dip in 2020 (~120 reviews) due to COVID-19  
-- Gradual recovery to 2024 (~300 reviews)  
-- Average rating remained stable around **7.8–8.0**
-
-### 5. Route & Class Analysis
-- Business and First Class consistently report higher satisfaction across all routes  
-- Economy ratings lower on **long-haul flights**  
-- Identified routes with **lower ratings**, suggesting potential operational improvements
-
----
-
 ## Tableau Dashboard
 The dashboard is interactive and includes:  
 - Trend analysis of reviews over time  
@@ -108,12 +69,5 @@ This project demonstrates how **data-driven insights** can guide **strategic imp
 
 ## Project Files
 - `emirates_reviews_cleaned.csv` → Cleaned dataset ready for analysis  
-- `EDA.ipynb` → Python notebook with preprocessing & analysis  
+- `python_pre-processing.ipynb` → Python notebook with preprocessing  
 - `Tableau Dashboard` → Interactive visualizations
-
----
-
-## How to Run
-1. Clone the repository:  
-```bash
-git clone https://github.com/<your-username>/emirates-airways-reviews.git
