@@ -1,6 +1,6 @@
 # Emirates Airways Customer Reviews Analysis (2016–2024)
 
-                                                       ![Emirates Logo](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Emirates_logo.svg/640px-Emirates_logo.svg.png)
+  ![Emirates Logo](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Emirates_logo.svg/640px-Emirates_logo.svg.png)
 
 ## Project Overview
 This project analyzes **Emirates Airways customer reviews** from 2016 to 2024. Using Python for **data preprocessing**, and Tableau for interactive **dashboard visualization**, the project aims to uncover insights about:
